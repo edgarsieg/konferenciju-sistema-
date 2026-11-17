@@ -1,0 +1,191 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+    background: #f4f6f9;
+    color: #1f2937;
+}
+
+.app-wrapper {
+    min-height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 210px;
+    min-height: 100vh;
+    background: #1f2937;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.sidebar-nav {
+    padding: 90px 12px 20px;
+}
+
+.sidebar-nav a {
+    display: block;
+    color: #d1d5db;
+    text-decoration: none;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.sidebar-nav a:hover {
+    background: #374151;
+    color: white;
+}
+
+.sidebar-nav a.active {
+    background: #2563eb;
+    color: white;
+}
+
+.main-content {
+    margin-left: 210px;
+    width: calc(100% - 210px);
+    min-height: 100vh;
+}
+
+.topbar {
+    height: 70px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 28px;
+}
+
+.topbar-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.topbar-user {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.page-content {
+    padding: 30px;
+}
+
+.dashboard-header {
+    text-align: center;
+    background: white;
+    border-radius: 14px;
+    padding: 32px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-header h1 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-body {
+    padding: 22px;
+}
+
+.role-card {
+    transition: 0.2s;
+}
+
+.role-card:hover {
+    transform: translateY(-2px);
+}
+
+.btn {
+    border-radius: 7px;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.form-control {
+    border-radius: 7px;
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .main-content {
+        margin-left: 180px;
+        width: calc(100% - 180px);
+    }
+
+    .topbar-title {
+        font-size: 18px;
+    }
+    .conference-card {
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.conference-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.conference-card-header {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 16px;
+    margin-bottom: 18px;
+}
+
+.conference-title {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.conference-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.conference-info div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.conference-label {
+    font-weight: 600;
+    color: #374151;
+}
+
+.conference-actions {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+body {
+    background: #e8eef7 !important;
+}
+
+.conference-actions {
+    display: flex !important;
+    gap: 20px !important;
+}
+}
